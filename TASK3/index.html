@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Task 1 + Task 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>MySite</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#todo">To-Do</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Hello, I'm Developer👋</h1>
+        <p>Web Developer | Learning HTML, CSS, JS 🚀</p>
+        <button onclick="showMessage()">Click Me</button>
+    </section>
+
+    <!-- Cards -->
+    <section class="cards">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Structure of webpage</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Design & styling</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Interactivity</p>
+        </div>
+    </section>
+    <!-- Image Carousel -->
+<section class="container">
+    <h2>Image Carousel</h2>
+
+    <div class="carousel">
+        <img id="carouselImage" src="https://via.placeholder.com/300" />
+    </div>
+
+    <button onclick="prevImage()">Prev</button>
+    <button onclick="nextImage()">Next</button>
+</section>
+
+
+<!-- API Section -->
+<section class="container">
+    <h2>Get a Random Joke 😂</h2>
+
+    <button onclick="getJoke()">Get Joke</button>
+
+    <p id="jokeText"></p>
+</section>
+
+    <!-- To-Do -->
+    <section id="todo" class="container">
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <textarea id="message" placeholder="Your message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="formMsg"></p>
+
+        <!-- 🔥 Output Display -->
+        <div id="outputBox"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Harsh | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
