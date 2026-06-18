@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Developer</h2>
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="todo.html">To-Do</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+
+    <h2>Products</h2>
+
+    <select id="filter" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+    </select>
+
+    <select id="sort" onchange="sortProducts()">
+        <option value="default">Sort</option>
+        <option value="low">Price Low-High</option>
+        <option value="high">Price High-Low</option>
+    </select>
+
+    <div id="productList"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
